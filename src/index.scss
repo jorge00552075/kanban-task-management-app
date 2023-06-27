@@ -4,6 +4,14 @@
   --fs-16: 1rem;
   --fs-18: 1.125rem;
   --fs-24: 1.5rem;
+
+  --primary-clr: hsl(242, 48%, 58%);
+  --primary-clr-hover: hsl(243, 100%, 82%);
+  --bg-clr-1: hsl(235, 16%, 15%);
+  --bg-clr-2: hsl(235, 12%, 19%);
+  --text-clr-1: hsl(0, 0%, 100%);
+  --text-clr-2: hsl(216, 15%, 57%);
+  --border-clr: hsl(236, 11%, 27%);
 }
 
 *,
@@ -31,9 +39,10 @@ svg {
 }
 
 body {
-  background-color: hsl(235, 16%, 15%);
+  background-color: var(--bg-clr-1);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
   font-size: var(--fs-16);
+  color: var(--text-clr-1);
   line-height: 1.25;
 }
