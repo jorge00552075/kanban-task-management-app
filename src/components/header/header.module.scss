@@ -1,0 +1,56 @@
+.header {
+  display: grid;
+  grid-template-columns: 18.75rem 1fr;
+  // padding-block: 1.5rem;
+  height: 6rem;
+  border-bottom: 1px solid var(--border-clr);
+  background-color: var(--bg-clr-2);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  border-left: 1px solid var(--border-clr);
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: var(--fs-24);
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.addBtn {
+  padding-block: 0.875rem;
+  padding-inline: 1.25rem;
+  border: none;
+  border-radius: 24px;
+  background-color: var(--primary-clr);
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: background-color 300ms;
+
+  &:where(:hover, :active) {
+    background-color: var(--primary-clr-hover);
+  }
+}
+
+.menuBtn {
+  /* Todo: add larger hit box and transition */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
