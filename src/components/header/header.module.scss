@@ -1,7 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-columns: 18.75rem 1fr;
-  // padding-block: 1.5rem;
   height: 6rem;
   border-bottom: 1px solid var(--border-clr);
   background-color: var(--bg-clr-2);
