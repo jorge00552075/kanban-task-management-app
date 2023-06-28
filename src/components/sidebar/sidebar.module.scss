@@ -1,0 +1,84 @@
+.sidebar {
+  position: sticky;
+  top: 6rem;
+  height: calc(100vh - 6rem);
+  width: 18.75rem;
+  background-color: var(--bg-clr-2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 0 0;
+}
+
+.sidebarHeading {
+  margin: 0 0 1.25rem 2rem;
+  font-weight: 700;
+  font-size: var(--fs-12);
+  color: var(--text-clr-2);
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+/* ****************************** */
+/* Buttons */
+/* ****************************** */
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding-block: 0.875rem;
+  padding-left: 2rem;
+  border: none;
+  border-top-right-radius: 6.25rem;
+  border-bottom-right-radius: 6.25rem;
+  background-color: transparent;
+  font-weight: 700;
+  color: var(--text-clr-2);
+  cursor: pointer;
+}
+
+.changeActiveBoard {
+  composes: button;
+  transition: all 300ms;
+
+  &:where(:hover, :active) {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--primary-clr);
+
+    .boardIcon {
+      fill: var(--primary-clr);
+    }
+  }
+}
+
+.createNewBoard {
+  composes: button;
+  color: var(--primary-clr);
+  transition: all 300ms;
+
+  &:where(:hover, :active) {
+    background-color: var(--primary-clr);
+    color: hsl(0, 0%, 100%);
+
+    .boardIcon {
+      fill: hsl(0, 0%, 100%);
+    }
+  }
+}
+
+.hideSidebar {
+  composes: button;
+  transition: all 300ms;
+
+  &:where(:hover, :active) {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--primary-clr);
+  }
+}
+
+.btnWrapper {
+  margin-bottom: 2rem;
+}
