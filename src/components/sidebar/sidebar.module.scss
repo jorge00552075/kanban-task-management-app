@@ -60,6 +60,10 @@
   color: var(--primary-clr);
   transition: all 300ms;
 
+  .boardIcon {
+    fill: var(--primary-clr);
+  }
+
   &:where(:hover, :active) {
     background-color: var(--primary-clr);
     color: hsl(0, 0%, 100%);
@@ -81,5 +85,8 @@
 }
 
 .btnWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-bottom: 2rem;
 }

@@ -1,5 +1,6 @@
-import styles from "./sidebar.module.scss";
+import Switch from "../switch/switch";
 import hideSidebarIcon from "../../assets/icon-hide-sidebar.svg";
+import styles from "./sidebar.module.scss";
 
 const boardIcon = (
   <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +36,7 @@ export default function Sidebar() {
       </div>
 
       <div className={styles.btnWrapper}>
-        {/* TODO: add switch component */}
+        <Switch />
         <button className={styles.hideSidebar} type="button">
           <img src={hideSidebarIcon} alt="" />
           Hide Sidebar
