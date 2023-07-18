@@ -40,7 +40,10 @@
   color: var(--text-clr-1);
   text-align: left;
   cursor: pointer;
-  transition: all 300ms;
+
+  .title {
+    transition: all 300ms;
+  }
 
   &:where(:hover, :active) {
     .title {
