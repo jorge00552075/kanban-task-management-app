@@ -31,7 +31,7 @@ export default function Sidebar() {
         </button>
         <button className={styles.createNewBoard} type="button">
           {boardIcon}
-          Create New Board
+          &rarr; Create New Board
         </button>
       </div>
 
