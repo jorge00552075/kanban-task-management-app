@@ -1,0 +1,19 @@
+.column {
+  width: 17.5rem;
+
+  .status {
+    margin-bottom: 1.5rem;
+
+    font-weight: 700;
+    font-size: var(--fs-12);
+    color: var(--text-clr-2);
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
