@@ -2,35 +2,55 @@
   flex-grow: 1;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+  overflow-x: scroll;
+}
 
-  .columnContainer {
-    display: flex;
-    gap: 1.5rem;
+.columnsContainer {
+  display: flex;
+  gap: 1.5rem;
+
+  .addNewColumnButton {
+    width: 17.5rem;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(
+      180deg,
+      rgba(43, 44, 55, 0.25) 0%,
+      rgba(43, 44, 55, 0.13) 100%
+    );
+    font-weight: 700;
+    font-size: var(--fs-24);
+    color: var(--text-clr-2);
+    transition: all 300ms;
+    cursor: pointer;
+
+    &:is(:hover, :active) {
+      color: var(--primary-clr);
+    }
   }
+}
 
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    translate: 0 calc(-50% + -100px);
-  }
+.emptyBoardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  translate: 0 calc(-50% + -100px);
 
-  .text {
-    // Heading-L
+  p {
     font-weight: 700;
     font-size: var(--fs-18);
     color: var(--text-clr-2);
   }
 
-  .button {
+  .emptyBoardButton {
     padding-block: 0.875rem;
     padding-inline: 1.25rem;
     border: none;

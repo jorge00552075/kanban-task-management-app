@@ -3,12 +3,10 @@ import styles from "./board.module.scss";
 
 export default function Board() {
   const renderEmptyBoard = (
-    <div className={styles.center}>
-      <div className={styles.content}>
-        <p className={styles.text}>
-          This board is empty. Create a new column to get started.
-        </p>
-        <button className={styles.button} type="button">
+    <div className={styles.centerContent}>
+      <div className={styles.emptyBoardContent}>
+        <p>This board is empty. Create a new column to get started.</p>
+        <button className={styles.emptyBoardButton} type="button">
           + Add New Column
         </button>
       </div>
@@ -17,12 +15,15 @@ export default function Board() {
 
   return (
     <div className={styles.board}>
-      {renderEmptyBoard}
-      {/* <div className={styles.columnContainer}>
+      {/* {renderEmptyBoard} */}
+      <div className={styles.columnsContainer}>
         <Column />
         <Column />
         <Column />
-      </div> */}
+        <button className={styles.addNewColumnButton} type="button">
+          + New Column
+        </button>
+      </div>
     </div>
   );
 }
