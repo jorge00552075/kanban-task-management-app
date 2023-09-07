@@ -1,9 +1,13 @@
 import logo from "../../assets/logo-light.svg";
 import ellipsis from "../../assets/icon-vertical-ellipsis.svg";
-
+import { Board } from "../../../types";
 import styles from "./header.module.scss";
 
-export default function Header() {
+type HeaderProps = {
+  board: Board;
+};
+
+export default function Header({ board }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.logoWrapper}>
@@ -11,7 +15,7 @@ export default function Header() {
       </div>
 
       <div className={styles.headerContent}>
-        <h1 className={styles.headerTitle}>Platform Launch</h1>
+        <h1 className={styles.headerTitle}>{board.name}</h1>
 
         <div className={styles.buttonWrapper}>
           <button className={styles.addBtn} type="button">
